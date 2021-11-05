@@ -23,3 +23,4 @@ Finns en del res.status()... som man kanske skulle kunna snygga till lite men de
 När jag arbetade och testat så har jag använt mig av [Insomnia](https://insomnia.rest/) för jag har använt det för och tycker det fungerar bra.
 Tycker att när man använder REST client i vscode så blir .http filerna ganska svårlästa.
 Det var nu först i slutet satte jag till .http filerna och testade dem så att de fungerade med REST client.
+
