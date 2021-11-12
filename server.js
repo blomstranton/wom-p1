@@ -1,6 +1,7 @@
 // Imports
 const express = require('express');
 const mongoose = require('mongoose')
+const cors = require('cors')
 const app = express();
 const PORT = process.env.PORT || 3030;
 require('dotenv').config()
@@ -16,7 +17,8 @@ mongoose.connect(process.env.DB_URL)
 const db = mongoose.connection
 db.on('error', (error) => console.log(error))
 db.once('open', () => console.log('Connected to DB'))
-
+// Cors
+app.use(cors())
 // Routes
 app.use('/users', usersRouter)
 app.use('/cabins', cabinsRouter)
